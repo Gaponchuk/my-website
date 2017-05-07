@@ -9,7 +9,7 @@
 <body>
 <div class="wrapper">
 <!--Information about me-->
-  <div class="my-card">
+   <div class="my-card">
     <img src="img/man.jpeg" width="270" height="368">
     <h1>Gaponchuk Yuriy</h1>
     <p>Web-developer</p>
@@ -19,16 +19,15 @@
       <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
       <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
     </section>
-  </div>
+    </div>
 <!-- Navigation-->
   <div class="main">
     <nav class="navigation-top">
       <ul>
-        <li><a class="about" href="#" onClick="document.getElementById('one').style.display = 'block'; document.getElementById('two').style.display = 'none'; document.getElementById('three').style.display =  'none'; document.getElementById('four').style.display = 'none'; document.getElementById('five').style.display='none'">about me</a></li>
-        <li><a class="resume" href="#" onClick="document.getElementById('two').style.display = 'block'; document.getElementById('one').style.display = 'none'; document.getElementById('three').style.dispaly = 'none'; document.getElementById('four').style.display = 'none'; document.getElementById('five').style.display='none'">my resume</a></li>
-        <li><a class="portfolio" href="#" onClick="document.getElementById('three').style.display = 'block'; document.getElementById('one').style.display = 'none'; document.getElementById('two').style.display =  'none'; document.getElementById('four').style.display = 'none'; document.getElementById('five').style.display='none'">my portfolio</a></li>
-        <li><a class="contact" href="#" onClick="document.getElementById('four').style.display = 'block'; document.getElementById('one').style.display = 'none'; document.getElementById('three').style.display =  'none'; document.getElementById('two').style.display = 'none'; document.getElementById('five').style.display='none'">contact me</a></li>
-        <li><a class="interesting" href="#" onClick="document.getElementById('five').style.display = 'block'; document.getElementById('one').style.display = 'none'; document.getElementById('three').style.display =  'none'; document.getElementById('two').style.display = 'none'; document.getElementById('four').style.display='none'">interesting</a></li>
+        <li><a class="about" href="#" onClick="document.getElementById('one').style.display = 'block'; document.getElementById('two').style.display = 'none'; document.getElementById('three').style.display =  'none'; document.getElementById('four').style.display = 'none'">about me</a></li>
+        <li><a class="portfolio" href="#" onClick="document.getElementById('two').style.display = 'block'; document.getElementById('one').style.display = 'none'; document.getElementById('three').style.display =  'none'; document.getElementById('four').style.display = 'none'">my portfolio</a></li>
+        <li><a class="contact" href="#" onClick="document.getElementById('three').style.display = 'block'; document.getElementById('one').style.display = 'none'; document.getElementById('four').style.display =  'none'; document.getElementById('two').style.display = 'none'">contact me</a></li>
+        <li><a class="interesting" href="#" onClick="document.getElementById('four').style.display = 'block'; document.getElementById('one').style.display = 'none'; document.getElementById('three').style.display =  'none'; document.getElementById('two').style.display = 'none'">interesting</a></li>
       </ul>
     </nav>
 <!--block "about me"-->
@@ -112,11 +111,8 @@
         
       </section>
     </article>
-<!--block my rezume-->
-<article id="two" style="display:none" class="topic-about topic">
-</article>
 <!--block my portfolio-->
-    <article id="three" style="display:none" class="portfolio-topic topic">
+    <article id="two" style="display:none" class="portfolio-topic topic">
      <div class="clearfix">
       <h2 class="topic-head">My Portfolio</h2>
        <ul class="portfolio-filter">
@@ -176,7 +172,7 @@
       </div>
     </article>
 <!--block my contact-->
-    <article id="four" style="display:none" class="contact-topic topic">
+    <article id="three" style="display:none" class="contact-topic topic">
       <h2 class="topic-head">Contact me</h2>
       <hr>
       <h3>Contact form</h3>
@@ -204,23 +200,36 @@
       <div class="map"></div>
     </article>
 <!--block interesting-->
-    <article id="five" style="display:none" class="interesting-topic topic">
+    <article id="four" style="display:none" class="interesting-topic topic">
       <h2 class="topic-head">Interesting articles for self-development</h2>
       <hr>
       <div class="news">
-        <h3>Lorem ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab error possimus tempora, quis rerum vero quas quam ullam at obcaecati.</p>
-        <a href="#">link</a>
+        <img src="http://www.digitalalberta.com/wp-content/uploads/2015/05/blog6Things-900x480-900x480.jpg" alt="fresh news from world IT" width="810" height="325">
+        <h3>Working principle, how do we work?</h3>
+        <p class="date-publication">December 06, 2016 / Business, Company / 2 Comments</p>
+        <p>Blanditiis dapibus, aliquet ullam in ut, conubia turpis dolore vivamus ligula deserunt, vehicula praesent iure? Magni? Porta minus pariatur ante dolore, veniam cubilia urna? Eligendi commodo fugiat voluptate, rerum orci neque voluptatem cum repellendus exercitation pellentesque. </p>
+        <a class="load-more" href="#">load more</a>
       </div>
       <div class="news">
-        <h3>Lorem ipsum.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus debitis animi, quaerat, quos quisquam esse!</p>
-        <a href="#">link</a>
+        <img src="http://cdn.wallpapersafari.com/1/36/TE1liZ.jpg" alt="" width="810" height="325">
+        <h3>We're doing business with pleasure</h3>
+        <p class="date-publication">December 06, 2016 / Business, Company / 2 Comments</p>
+        <p>Blanditiis dapibus, aliquet ullam in ut, conubia turpis dolore vivamus ligula deserunt, vehicula praesent iure? Magni? Porta minus pariatur ante dolore, veniam cubilia urna? Eligendi commodo fugiat voluptate, rerum orci neque voluptatem cum repellendus exercitation pellentesque. </p>
+        <a class="load-more" href="#">load more</a>
       </div>
       <div class="news">
-        <h3>Lorem ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto soluta labore unde, corrupti non tenetur.</p>
-        <a href="#">link</a>
+        <img src="http://c6.glitch.bz/photos/2012-11-04/PHFDI7L7D1D2BLA/147417_c19b85cabf_o.png" alt="" width="810" height="325">
+        <h3>Your ideas are very important to us</h3>
+        <p class="date-publication">December 06, 2016 / Business, Company / 2 Comments</p>
+        <p>Blanditiis dapibus, aliquet ullam in ut, conubia turpis dolore vivamus ligula deserunt, vehicula praesent iure? Magni? Porta minus pariatur ante dolore, veniam cubilia urna? Eligendi commodo fugiat voluptate, rerum orci neque voluptatem cum repellendus exercitation pellentesque. </p>
+        <a class="load-more" href="#">load more</a>
+        <div class="paganation">
+          <a class="paganation-up" href="#"></a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a class="paganation-back" href="#"></a>
+        </div>
       </div>
     </article>
 <!--footer-->

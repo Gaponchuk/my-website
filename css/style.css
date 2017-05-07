@@ -14,7 +14,7 @@ body {
 }
 
 .main {
-  max-width: 870px; /*74.358974358974%;*/
+  max-width: 870px;
   display: inline-block;
 }
 
@@ -50,17 +50,31 @@ hr {
 }
 
 .social a {
-  padding: 11px;
+  width: 32px;
+  height: 32px;
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 18px;
   margin-right: 11px;
   border: 2px solid #000;
-  border-radius: 55%;
+  border-radius: 50%;
   color: #000;
+  position: relative;
+}
+
+a i {
+  position: absolute;
+  top: 5px;
+  left: 7px;
 }
 
 .social a:hover {
-  background-color: #e3dfdf;
+  background-color: #3e9ddd;
+  border: 2px solid #3e9ddd;
+}
+
+.social a:hover i {
+  color: #fff;
 }
 
 /*navigation*/
@@ -74,7 +88,7 @@ hr {
 }
 
 .navigation-top li {
-  width: 20%;
+  width: 25%;
   display: inline-block;
   vertical-align: top;
   border-right: 1px dashed #c1c1c1;
@@ -107,8 +121,8 @@ hr {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 45px;
-  left: 70px;
+  top: 30%;
+  left: 45%;
   background-repeat: no-repeat;
 }
 
@@ -140,7 +154,9 @@ hr {
 /*style for topics*/
 
 .topic-head {
+  margin: 0px;
   margin-left: 30px;
+  margin-bottom: 24px;
   font-family: "Lato", serif;
   font-size: 20px;
   line-height: 26px;
@@ -148,11 +164,17 @@ hr {
 }
 
 .topic {
+  width: 870px;
   background-color: #fcfcfc;
   padding-top: 30px;
+
 }
 
 /*about-topic*/
+
+.topic-about hr {
+  margin-bottom: 39px;
+}
 
 .topic-about .information {
   width: 240px;
@@ -243,6 +265,9 @@ hr {
 
 
 /*information about me and my advantages*/
+.description-topic {
+  margin-top: 50px;
+}
 
 .description-topic,
 .services {
@@ -286,12 +311,12 @@ hr {
 
 .services li::before {
   position: absolute;
-  content: "";
-  width: 40px;
-  height: 40px;
+  content: "\2714";
+  width: 30px;
+  height: 25px;
   background-color: #ff9404;
-  top: 7px;
-  left: 15px;
+  top: 30%;
+  left: 25px;
 }
 
 
@@ -320,6 +345,7 @@ hr {
 .portfolio-topic a {
   text-decoration: none;
   color: #949494;
+  padding: 5px;
 }
 
 .portfolio-filter a {
@@ -375,8 +401,16 @@ hr {
 
 .works section a {
   color: #ffffff;
-  top: 75%;
-  right: 35%;
+  top: 70%;
+  right: 30%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 7px 15px;
+}
+
+.works section a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .works img {
@@ -473,6 +507,89 @@ form input[type=submit]:hover {
   background-image: url("../img/map.jpg");
 }
 
+/*style for block "interesting"*/
+
+.interesting-topic .news {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom:60px;
+}
+
+.interesting-topic .news:last-child {
+  margin-bottom: 0;
+}
+
+.interesting-topic img {
+  width: 100%;
+  height: 325px;
+  background-color: #7e7e7e;
+  background-size: cover;
+}
+
+.interesting-topic hr {
+  margin-bottom: 17px;
+}
+
+.interesting-topic h3 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.interesting-topic p {
+  color: #a8a8a8;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.interesting-topic .date-publication {
+  margin-bottom: 15px;
+  color: #2574a9;
+}
+
+a.load-more {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2574a9;
+  padding: 9px 27px 9px 23px;
+}
+
+a.load-more:hover {
+  background-color: #3e9ddd;
+}
+
+.paganation {
+  margin-top: 40px; 
+  padding-bottom: 45px;
+}
+
+.paganation a {                    /*style gor paganation*/
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 6px 12px;
+  color: #b1b1b1;
+  border: 1px solid #e5e5e5;
+  text-decoration: none;
+}
+
+.paganation a:hover {
+  color: #2574a9;
+}
+
+.paganation-up,
+.paganation-back` {
+  position: relative;
+}
+
+.paganation-up::before {
+  content:"<";
+}
+
+.paganation-back:before {
+  content: ">";
+}
 
 
 
