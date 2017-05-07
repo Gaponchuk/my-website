@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GYN Website-portfolio</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="wrapper">
+<!--Information about me-->
+  <div class="my-card">
+    <img src="img/man.jpeg" width="270" height="368">
+    <h1>Gaponchuk Yuriy</h1>
+    <p>Web-developer</p>
+    <hr>
+    <section class="social">
+      <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+    </section>
+  </div>
+<!-- Navigation-->
+  <div class="main">
+    <nav class="navigation-top">
+      <ul>
+        <li><a class="about" href="#" onClick="document.getElementById('one').style.display = 'block'; document.getElementById('two').style.display = 'none'; document.getElementById('three').style.display =  'none'; document.getElementById('four').style.display = 'none'; document.getElementById('five').style.display='none'">about me</a></li>
+        <li><a class="resume" href="#" onClick="document.getElementById('two').style.display = 'block'; document.getElementById('one').style.display = 'none'; document.getElementById('three').style.dispaly = 'none'; document.getElementById('four').style.display = 'none'; document.getElementById('five').style.display='none'">my resume</a></li>
+        <li><a class="portfolio" href="#" onClick="document.getElementById('three').style.display = 'block'; document.getElementById('one').style.display = 'none'; document.getElementById('two').style.display =  'none'; document.getElementById('four').style.display = 'none'; document.getElementById('five').style.display='none'">my portfolio</a></li>
+        <li><a class="contact" href="#" onClick="document.getElementById('four').style.display = 'block'; document.getElementById('one').style.display = 'none'; document.getElementById('three').style.display =  'none'; document.getElementById('two').style.display = 'none'; document.getElementById('five').style.display='none'">contact me</a></li>
+        <li><a class="interesting" href="#" onClick="document.getElementById('five').style.display = 'block'; document.getElementById('one').style.display = 'none'; document.getElementById('three').style.display =  'none'; document.getElementById('two').style.display = 'none'; document.getElementById('four').style.display='none'">interesting</a></li>
+      </ul>
+    </nav>
+<!--block "about me"-->
+    <article id="one" style="display:block" class="topic-about topic">
+      <h2 class="topic-head">About me</h2>
+      <hr>
+        <div class="clearfix">      
+       <section class="information">
+        <ul>
+          <li>Full Name : <span>Gaponchuk Yuriy</span></li>
+          <li>Birthday : <span>02 September 1988</span></li>
+          <li>Job : <span>Frelancer</span></li>
+          <li>Website : <span>www.gaponchuk.com</span></li>
+          <li>Email : <span>gaponchykyn@gmail.com</span></li>
+          <li>Skype : <span>gaponchykyn</span></li>
+        </ul>
+      </section>
+<!--block skills-->
+      <section class="skills">
+        <div class="html">
+          <h3>HTML5</h3>
+          <div class="skill">
+            <div class="skill-bar html-code"></div>
+          </div>
+        </div>
+        <div class="css">
+          <h3>CSS3</h3>
+          <div class="skill">
+            <div class="skill-bar css-code"></div>
+          </div>
+        </div>
+        <div class="javascript">
+          <h3>JavaScript</h3>
+          <div class="skill">
+            <div class="skill-bar js-code"></div>
+          </div>
+        </div>
+        <div class="less">
+          <h3>Less</h3>
+          <div class="skill">
+            <div class="skill-bar less-code"></div>
+          </div>
+        </div>
+        <div class="photoshop">
+          <h3>Photoshop</h3>
+          <div class="skill">
+            <div class="skill-bar ps-skill"></div>
+          </div>
+        </div>
+      </section>
+      </div>
+<!--another information-->
+      <div class="description-topic">
+        <h2>I'm web-developer</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis at deleniti est, soluta vero id nesciunt consectetur placeat enim similique repellat, eligendi! Reprehenderit, porro rerum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cum neque nihil consequuntur at, cupiditate quos ipsa, consequatur veritatis impedit nostrum repellat sed architecto libero natus sit dolorum rem ullam sequi. Consequatur ducimus voluptate laboriosam voluptatem expedita magnam at reiciendis, aliquid officiis ullam atque dolore doloribus tempore quidem magni laborum. Ipsam adipisci ea blanditiis, delectus officiis.</p>
+      </div>
+      <section class="services">
+        <h2>What I'm Doing</h2>
+        <ul>
+          <li>Validation code</li>
+          <li>Adaptive / Responsive</li><br>
+          <li>Good load speed</li>
+          <li>Cross-browser compatibility</li>
+        </ul>
+        
+<!--
+        <div class="services1">
+          <p>Validation code</p>
+        </div>
+        <div class="services2">
+          <p>Adaptive / Responsive</p>
+        </div>
+        <div class="services3">
+          <p>Good load speed</p>
+        </div>
+        <div class="services4">
+          <p>Cross-browser compatibility</p>
+        </div>
+-->
+        
+      </section>
+    </article>
+<!--block my rezume-->
+<article id="two" style="display:none" class="topic-about topic">
+</article>
+<!--block my portfolio-->
+    <article id="three" style="display:none" class="portfolio-topic topic">
+     <div class="clearfix">
+      <h2 class="topic-head">My Portfolio</h2>
+       <ul class="portfolio-filter">
+        <li><a href="#">All Works</a></li>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Application</a></li>
+        <li><a href="#">Development</a></li>
+      </ul>
+      </div>
+      <hr>
+      <div class="works">
+        <section class="work1">
+          <img src="http://sds-dance.ru/ff/1/galaktika_zvezdy_svet_tumannost_1850x1180.jpg" alt="" width="250" height="155">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime!</p>
+          <a href="">go site</a>
+        </section>
+        <section class="work2">
+          <img src="http://boombob.ru/img/picture/Jul/05/7c05a72ea8ca1b405f88e09a5d55f762/1.jpg" alt="" width="250" height="155">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque?</p>
+          <a href="">go site</a>
+        </section>
+        <section class="work3">
+          <img src="http://oboi-dlja-stola.ru/file/14184/760x0/16:9/%D0%97%D0%B5%D0%BC%D0%BB%D1%8F-%D0%B8%D0%B7-%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D1%81%D0%B0-.jpg" alt="" width="250" height="155">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam.</p>
+          <a href="">go site</a>
+        </section>
+        <section class="work4">
+          <img src="http://gorod48.ru/upload/iblock/902/9025818495ace44f044e0030d8245d90.jpg" alt="" width="250" height="155">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <a href="">go site</a>
+        </section>
+        <section class="work5">
+          <img src="http://cloudberrystudio.ru/ff/10/orbita_svet_saturn_siyanie_kolca_kosmos_planety_1920x1080.jpg" alt="" width="250" height="155">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="">go site</a>
+        </section>
+        <section class="work6">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7YjPDAqOIqo5Nrh9YMu9D77zCbN1eqEu7xX0gVIbuWQfFg36EVg" alt="" width="250" height="155">
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          <a href="">go site</a>
+        </section>
+        <section class="work7">
+          <img src="https://look.com.ua/pic/201702/2560x1600/look.com.ua-196567.jpg" alt="" width="250" height="155">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse!</p>
+          <a href="">go site</a>
+        </section>
+        <section class="work8">
+          <img src="http://goodfon.org/_ph/54/330151906.jpg" alt="" width="250" height="155">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="">go site</a>
+        </section>
+        <section class="work9">
+          <img src="http://www.mobilmusic.ru/mfile/aa/d7/cc/375187.jpg" alt="" width="250" height="155">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <a href="">go site</a>
+        </section>
+      </div>
+    </article>
+<!--block my contact-->
+    <article id="four" style="display:none" class="contact-topic topic">
+      <h2 class="topic-head">Contact me</h2>
+      <hr>
+      <h3>Contact form</h3>
+      <form action="" method="">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <input type="submit" value="send message">
+      </form>
+      <section class="contact-information">
+       <h3>Contact info</h3>
+        <ul>
+          <li>Address: <span>Russia, New Yrengoy</span></li>
+          <li>Phone: <span>8-922-998-55-78</span></li>
+          <li>Email: <span>gaponchykyn@gmail.com</span></li>
+          <li>Website: <span>www.gaponchuk.com</span></li>
+          <li>Skype: <span>gaponchykyn</span></li>
+        </ul>
+        <div class="social">
+          <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+        </div>
+      </section>
+      <div class="map"></div>
+    </article>
+<!--block interesting-->
+    <article id="five" style="display:none" class="interesting-topic topic">
+      <h2 class="topic-head">Interesting articles for self-development</h2>
+      <hr>
+      <div class="news">
+        <h3>Lorem ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab error possimus tempora, quis rerum vero quas quam ullam at obcaecati.</p>
+        <a href="#">link</a>
+      </div>
+      <div class="news">
+        <h3>Lorem ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus debitis animi, quaerat, quos quisquam esse!</p>
+        <a href="#">link</a>
+      </div>
+      <div class="news">
+        <h3>Lorem ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto soluta labore unde, corrupti non tenetur.</p>
+        <a href="#">link</a>
+      </div>
+    </article>
+<!--footer-->
+    <div class="footer">
+    <hr class="separator-footer">
+    <div class="copyright">
+      <p>Copyright &#169; 2017 All right reserved</p>
+    </div>
+    </div>
+  </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
