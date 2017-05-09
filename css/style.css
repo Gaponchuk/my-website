@@ -104,8 +104,7 @@ a i {
   text-decoration: none;
   text-transform: capitalize;
   background-color: #ffffff;
-  padding-right: 46px;
-  padding-left: 47px;
+
   padding-top: 90px;
   padding-bottom: 42px;
   color: #000;
@@ -164,7 +163,7 @@ a i {
 }
 
 .topic {
-  width: 870px;
+  max-width: 870px;
   background-color: #fcfcfc;
   padding-top: 30px;
 
@@ -183,11 +182,16 @@ a i {
   margin-right: 25px;
 }
 
-.information ul,
-.contact-information ul{
+.information ul {
   list-style: none;
   padding-left: 30px;
   margin: 0;
+}
+
+.contact-information ul {
+  width: 331px;
+  margin-right: 29.9px;
+  list-style: none;
 }
 
 .information li,
@@ -199,8 +203,11 @@ a i {
 }
 
 .information span,
-.contact-information span {
+.contact-information span,
+.information a,
+.contact-information ul a{
   color: #949494;
+  text-decoration: none;
 }
 
 .topic-about .skills {
@@ -247,22 +254,69 @@ a i {
   width: 70%;
 }
 
+.tt-html {
+  left: 70%;
+}
+
 .skill .css-code {
   width: 65%;
+}
+
+.tt-css {
+  left: 65%;  
 }
 
 .skill .js-code {
   width: 15%;
 }
 
+.tt-js {
+  left: 15%;
+}
+
 .skill .less-code {
   width: 15%;
 }
 
-.skill .ps-skill {
-  width: 75%;
+.tt-less {
+  left: 15%;
 }
 
+.skill .ps-skill {
+  width: 70%;
+}
+
+.tt-ps {
+  left: 70%;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  width: 50px;
+  background-color: #2574a9;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px 0;
+  z-index: 1;
+  top: -10px;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -7px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent #2574a9 transparent transparent;
+}
+
+.skills div:hover .tooltiptext {
+  visibility: visible;
+}
 
 /*information about me and my advantages*/
 .description-topic {
@@ -428,8 +482,9 @@ a i {
   padding: 0;
   margin-left: 30px;
   max-width: 440px;
-  margin-right: 5px;
+  margin-right: 35px;
   display: inline-block;
+  margin-bottom: 50px;
 }
 
 form input[type=text],
@@ -486,7 +541,6 @@ form input[type=submit]:hover {
   display: inline-block;
   vertical-align: top;
   margin-top: -42px;
-  margin-left: 30px;
 }
 
 .contact-topic hr {
@@ -494,7 +548,7 @@ form input[type=submit]:hover {
 }
 
 .contact-information .social {
-  margin-left: 30px;
+  margin-left: 38px;
   margin-right: 11px;
   margin-top: 23px;
 }
@@ -503,10 +557,14 @@ form input[type=submit]:hover {
   margin: 0 auto;
   width: 93%;
   height: 300px;
-  margin-top: 38px;
+  margin-top: -12px;
   background-image: url("../img/map.jpg");
 }
 
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
 /*style for block "interesting"*/
 
 .interesting-topic .news {
