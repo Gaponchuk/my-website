@@ -29,7 +29,7 @@ body {
   font-family: "Lato", serif;
   max-width: 270px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-right: 20px;
 }
 
@@ -38,9 +38,11 @@ body {
 }
 
 .my-card h1 {
+  margin-top: -3px;
   font-size: 20px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-top: 20px;
 }
 
 .my-card p {
@@ -78,6 +80,10 @@ a i {
 
 .social a:hover i {
   color: #fff;
+}
+
+.bg-card {
+  background-color: #fff;
 }
 
 /*navigation*/
@@ -268,7 +274,13 @@ a i {
 }
 
 .skill .html-code {
+  width: 0%;
+  transition: 1s;
+}
+
+.html:hover .html-code {
   width: 70%;
+  transition: 1s;
 }
 
 .tt-html {
@@ -308,7 +320,7 @@ a i {
 }
 
 .tooltiptext {
-  visibility: hidden;
+/*  visibility: hidden;*/
   position: absolute;
   width: 50px;
   background-color: #2574a9;
@@ -331,9 +343,11 @@ a i {
   border-color: transparent #2574a9 transparent transparent;
 }
 
+/*
 .skills div:hover .tooltiptext {
   visibility: visible;
 }
+*/
 
 /*information about me and my advantages*/
 .description-topic {
@@ -722,10 +736,11 @@ a.load-more:hover {
 @media screen and (max-width: 900px) {
   .wrapper {
     display: block;
+    margin-top: 5px;
   }
   .my-card {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 5px auto;
   }
 }
 
